@@ -22,6 +22,26 @@ A professional task management application built with React.js, Vite, and Tailwi
 - **Icons**: Lucide React
 - **State Management**: React Context API + Custom Hooks
 
+## Screenshots
+
+### Login Page
+![Login Page](./screenshots/login.png)
+
+### Dashboard with Statistics
+![Dashboard](./screenshots/dashboard.png)
+
+### Add Task Modal
+![Add Task](./screenshots/add-task.png)
+
+### Task Management
+![Tasks List](./screenshots/tasks.png)
+
+### Dark Mode
+![Dark Mode](./screenshots/dark-mode.png)
+
+### Filter Options
+![Filters](./screenshots/filters.png)
+
 ## Getting Started
 
 ### Prerequisites
