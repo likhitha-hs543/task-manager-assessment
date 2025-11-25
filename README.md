@@ -24,23 +24,41 @@ A professional task management application built with React.js, Vite, and Tailwi
 
 ## Screenshots
 
-### Login Page
-![Login Page](./screenshots/login.png)
+### 🔐 Login Page
+![Login Page](./screenshots/login-page.png)
+*Clean and professional login interface with email/password authentication*
 
-### Dashboard with Statistics
-![Dashboard](./screenshots/dashboard.png)
+---
 
-### Add Task Modal
-![Add Task](./screenshots/add-task.png)
+### 📊 Dashboard with Statistics
+![Dashboard Statistics](./screenshots/statistics.png)
+*Real-time task analytics showing total, completed, pending, and overdue tasks with completion rate*
 
-### Task Management
-![Tasks List](./screenshots/tasks.png)
+---
 
-### Dark Mode
+### ➕ Adding New Task
+![Adding Task](./screenshots/adding-task.png)
+*Task creation modal with validation for title, description, priority, and due date*
+
+---
+
+### 📋 Tasks and Filtering
+![Tasks and Filtering](./screenshots/tasks-and-filtering.png)
+*Task list with search, status filters, and priority filters - demonstrating debounced search*
+
+---
+
+### 🔔 Email Notifications
+![Notifications](./screenshots/notification.png)
+*Simulated cron job showing email notifications for tasks due within 24 hours*
+
+---
+
+### 🌙 Dark Mode
 ![Dark Mode](./screenshots/dark-mode.png)
+*Application in dark theme with persistent theme toggle*
 
-### Filter Options
-![Filters](./screenshots/filters.png)
+---
 
 ## Getting Started
 
