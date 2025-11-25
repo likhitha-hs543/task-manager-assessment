@@ -127,7 +127,7 @@ A comprehensive 1-2 minute video demonstration showcasing all implemented featur
 
 **🎥 Watch the Demo Video**: [task-manager-demo.mp4](./demo/task-manager-demo.mp4)
 
-> Click the link above to download and watch the demo video
+> **How to watch**: Click the link above → Click "View raw" or "Download" button to download the video, then play it locally. (GitHub doesn't preview large video files in the browser)
 
 ### Features Demonstrated:
 - ✅ **Login & Authentication** - Email/password with session storage
