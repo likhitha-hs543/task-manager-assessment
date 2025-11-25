@@ -1,16 +1,133 @@
-# React + Vite
+# Task Manager Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional task management application built with React.js, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ **CRUD Operations**: Create, Read, Update, Delete tasks
+- 🔍 **Search & Filter**: Debounced search with elastic search flow, filter by status and priority
+- 🔐 **Authentication**: Simple email/password login with session management
+- 📊 **Statistics Dashboard**: Real-time task analytics and completion rates
+- 📧 **Email Automation**: Simulated cron job checking for tasks due soon every 30 seconds
+- 🎨 **Professional UI**: Modern design with Tailwind CSS, glassmorphism effects
+- 🌓 **Dark Mode**: Light and dark theme support
+- 📱 **Responsive**: Mobile-friendly design
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 18
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Routing**: React Router v6
+- **Icons**: Lucide React
+- **State Management**: React Context API + Custom Hooks
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/likhitha-hs543/task-manager-assessment.git
+cd task-manager-assessment
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+### Login Credentials
+
+For demo purposes, you can use any valid email and a password with at least 6 characters:
+- Email: demo@example.com
+- Password: demo123
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Auth/           # Login and ProtectedRoute components
+│   ├── Dashboard/      # Dashboard, Header, Statistics
+│   ├── Tasks/          # TaskForm, TaskItem, TaskList
+│   ├── Filters/        # SearchBar, FilterBar
+│   └── UI/             # Reusable components (Button, Input, Modal, Badge)
+├── contexts/           # Auth and Task context providers
+├── hooks/              # Custom hooks (useDebounce, useEmailAutomation)
+├── utils/              # Helper functions and constants
+└── App.jsx             # Main app with routing
+```
+
+## Key Features Implementation
+
+### 1. CRUD Operations
+- Add tasks with title, description, priority, and due date
+- Edit tasks (inline or modal)
+- Delete tasks with confirmation
+- Toggle task completion status
+- All tasks persist in localStorage
+
+### 2. Search & Filtering
+- **Debounced Search**: 500ms delay to optimize performance
+- **Elastic Search Flow**: Input → Debounce → Filter → Render
+- **Case-insensitive**: Partial substring matching
+- **Filters**: Status (All/Completed/Pending), Priority (All/High/Medium/Low)
+
+### 3. Session Management
+- Login with email/password
+- Session stored in sessionStorage
+- Protected routes redirect to login if not authenticated
+- Session clears when browser tab closes
+
+### 4. Email Automation
+- Simulated cron job runs every 30 seconds (configurable to 20 minutes)
+- Checks for tasks due within 24 hours
+- Generates mock email notifications
+- Displays notifications in UI with badge counter
+- Console logs for demo verification
+
+### 5. Statistics Dashboard
+- Total tasks count
+- Completed/Pending/Overdue counts
+- Completion rate percentage with progress bar
+- Real-time updates as tasks change
+
+## Assessment Requirements Compliance
+
+✅ React hooks for state management  
+✅ Tailwind CSS for styling  
+✅ Reusable components with props  
+✅ Clean code with comments  
+✅ Proper naming conventions  
+✅ All CRUD operations  
+✅ Filtering & Search with debouncing  
+✅ Login screen with session storage  
+✅ Elastic search flow implementation  
+✅ Email automation (simulated cron)  
+✅ Professional UI/UX design  
+
+## Demo Video
+
+[Video demonstration showing all features will be added here]
+
+## Author
+
+Likhitha HS  
+GitHub: [@likhitha-hs543](https://github.com/likhitha-hs543)
+
+## Assessment
+
+This project was created as part of a React.js/Node.js technical assessment.
