@@ -121,7 +121,24 @@ src/
 
 ## Demo Video
 
-[Video demonstration showing all features will be added here]
+### 📹 Complete Feature Demonstration
+
+A comprehensive 1-2 minute video demonstration showcasing all implemented features.
+
+**🎥 Watch the Demo Video**: [task-manager-demo.mp4](./demo/task-manager-demo.mp4)
+
+> Click the link above to download and watch the demo video
+
+### Features Demonstrated:
+- ✅ **Login & Authentication** - Email/password with session storage
+- ✅ **CRUD Operations** - Create, Read, Update, Delete tasks
+- ✅ **Search & Filter** - Debounced search with status and priority filters
+- ✅ **Email Automation** - 30-second cron checking tasks due within 24 hours
+- ✅ **Statistics Dashboard** - Real-time task analytics
+- ✅ **Dark/Light Mode** - Theme toggle with persistence
+- ✅ **Session Management** - Protected routes and logout
+
+> **Note**: Demo video also submitted via email to nelo.careers@gmail.com
 
 ## Author
 
